@@ -5,6 +5,7 @@ class Song
 
   def initialize(name, artist)
     @name = name
+    @artist = artist
   end
 
   def self.new_by_filename(filename) #figure out what the filename format is, and use split or gsub.
