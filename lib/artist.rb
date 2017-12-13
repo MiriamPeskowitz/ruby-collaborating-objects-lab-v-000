@@ -92,6 +92,7 @@ attr_accessor :name, :songs
 
     def print_songs(name)
       binding.pry
-      @songs.map {|song| puts song.name}
+      @songs.each {|song| puts song.name}
     end
 end
+
