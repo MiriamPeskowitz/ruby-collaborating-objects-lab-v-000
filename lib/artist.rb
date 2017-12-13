@@ -1,6 +1,6 @@
 require 'pry'
 class Artist
-  
+
   attr_accessor :name, :songs
   @@all = []
 
@@ -30,9 +30,9 @@ class Artist
     self.new(name).tap {|artist| artist.save}
   end
 
-  def self.artist_name(name)
-    self.name
-  end
+  # def self.artist_name(name)
+  #   self.name
+  # end
 
   def save
     @@all << self
@@ -40,6 +40,6 @@ class Artist
 
   def print_songs
     songs.each {|song| puts song.name}
-  
+
   end
 end
