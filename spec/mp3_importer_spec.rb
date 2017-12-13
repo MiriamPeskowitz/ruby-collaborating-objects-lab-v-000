@@ -31,6 +31,7 @@ describe "MP3Importer" do
   end
 
   describe '#import' do
+    binding.pry
     it 'imports the files into the library by creating songs from a filename' do
       Artist.class_variable_set("@@all",[])
       test_music_path = "./spec/fixtures/mp3s"
