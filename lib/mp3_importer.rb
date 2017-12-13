@@ -35,8 +35,11 @@ class MP3Importer
 
   def import(path)
     # files.map{|f| Song.new_by_filename(f)}
-    binding.pry
-    files.each{|f| Song.new_by_filename(f)}
+
+    files.each do |f|
+        binding.pry
+      Song.new_by_filename(f)
+    end
   end
 end
 
