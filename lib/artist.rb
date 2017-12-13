@@ -29,7 +29,7 @@ class Artist
     self.new(name).tap {|artist| artist.save}
   end
 
-  def self.artist_name=(name)
+  def self.artist_name(name)
     self.name
   end
 
@@ -39,5 +39,6 @@ class Artist
 
   def print_songs
     songs.each {|song| puts song.name}
+    binding.pry 
   end
 end
