@@ -12,8 +12,7 @@ class Song
 
     new_song = self.new(song)
     new_song.artist_name = artist
-    
-    new_song.save
+    new_song
   end
 
   def artist_name=(name)
