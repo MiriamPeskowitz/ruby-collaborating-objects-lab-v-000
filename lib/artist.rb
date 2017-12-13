@@ -30,7 +30,7 @@ class Artist
   end
 
   def self.artist_name=(name)
-    artist.name
+    self.name
   end
 
   def save
