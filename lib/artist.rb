@@ -42,7 +42,6 @@
 require 'pry'
 
 class Artist
-#if this artist is not in the array, create the artist, else send string of the artist's name to the Artist class,
   attr_accessor :name, :songs
   @@all = []
 
