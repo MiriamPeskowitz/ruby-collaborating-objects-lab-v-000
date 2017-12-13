@@ -42,7 +42,6 @@
 #   end
 # end
 #
-
 class MP3Importer
   attr_reader :path
 
@@ -55,6 +54,6 @@ class MP3Importer
   end
 
   def import
-    files.each{|f| Song.new_by_filename(f)}
+    files.map{|f| Song.new_by_filename(f)}
   end
 end
