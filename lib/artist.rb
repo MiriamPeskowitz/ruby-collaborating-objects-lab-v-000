@@ -29,6 +29,10 @@ class Artist
     self.new(name).tap {|artist| artist.save}
   end
 
+  def artist_name(name)
+    artist.name
+  end
+  
   def save
     @@all << self
   end
