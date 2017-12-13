@@ -29,7 +29,7 @@ class Artist
     self.new(name).tap {|artist| artist.save}
   end
 
-  def artist_name=(name)
+  def self.artist_name=(name)
     artist.name
   end
 
