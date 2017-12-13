@@ -49,7 +49,7 @@ attr_accessor :name
       @songs<<song
     end
 
-    def print_songs
+    def print_songs(name)
       @songs.map {|song| puts song.name}
     end
 end
