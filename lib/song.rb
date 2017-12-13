@@ -10,9 +10,9 @@ class Song
 
   def self.new_by_filename(filename) #figure out what the filename format is, and use split or gsub.
     # binding.pry
-    parts = filename.split(" - ")
-    new_song = self.new(parts[1])
-    new_song.artist_name= parts[0]
+    artist, song = filename.split(" - ")
+    new_song = self.new(song)
+    new_song.artist_name= artist
     new_song
   end
 
